@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AddPatietComponent } from './add-patiet/add-patiet.component';
 import { FormsModule } from '@angular/forms';
+import { ViewPatietComponent } from './view-patiet/view-patiet.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AddPatietComponent
+    AddPatietComponent,
+    ViewPatietComponent
   ],
   imports: [
     BrowserModule,
