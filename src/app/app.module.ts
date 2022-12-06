@@ -6,6 +6,19 @@ import { AppComponent } from './app.component';
 import { AddPatietComponent } from './add-patiet/add-patiet.component';
 import { FormsModule } from '@angular/forms';
 import { ViewPatietComponent } from './view-patiet/view-patiet.component';
+import { RouterModule, Routes } from '@angular/router';
+
+const myRoute:Routes=[
+  {
+    path:"",
+    component:AddPatietComponent
+  },
+
+  {
+    path:"view",
+    component:ViewPatietComponent
+  }
+]
 
 @NgModule({
   declarations: [
@@ -16,7 +29,8 @@ import { ViewPatietComponent } from './view-patiet/view-patiet.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot(myRoute)
   ],
   providers: [],
   bootstrap: [AppComponent]
