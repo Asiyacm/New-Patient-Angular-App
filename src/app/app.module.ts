@@ -7,6 +7,7 @@ import { AddPatietComponent } from './add-patiet/add-patiet.component';
 import { FormsModule } from '@angular/forms';
 import { ViewPatietComponent } from './view-patiet/view-patiet.component';
 import { RouterModule, Routes } from '@angular/router';
+import { NavComponent } from './nav/nav.component';
 
 const myRoute:Routes=[
   {
@@ -24,7 +25,8 @@ const myRoute:Routes=[
   declarations: [
     AppComponent,
     AddPatietComponent,
-    ViewPatietComponent
+    ViewPatietComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
