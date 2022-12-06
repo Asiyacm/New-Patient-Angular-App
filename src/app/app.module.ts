@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { ViewPatietComponent } from './view-patiet/view-patiet.component';
 import { RouterModule, Routes } from '@angular/router';
 import { NavComponent } from './nav/nav.component';
+import { HttpClientModule } from '@angular/common/http';
 
 const myRoute:Routes=[
   {
@@ -32,7 +33,8 @@ const myRoute:Routes=[
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    RouterModule.forRoot(myRoute)
+    RouterModule.forRoot(myRoute),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
