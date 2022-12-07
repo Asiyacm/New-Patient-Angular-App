@@ -26,6 +26,18 @@ export class AddPatietComponent {
       (response:any)=>
       {
         console.log(response)
+        if (response.status=="success")
+        {
+          alert("Course added successfully")
+          this.name=""
+          this.address=""
+          this.mobile=""
+          this.dateofapmt=""
+          this.dname=""
+        }
+        else{
+          alert("Something went wrong")
+        }
   }
     )
 
