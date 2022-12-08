@@ -28,11 +28,24 @@ searchData:any=[]
             
           } else {
             this.searchData=response
-            
+          
           }
         }
       )
-      
-    }
   }
+        deleteBtnClick=(id:any)=>{
 
+          let data:any={"id":id}
+          this.api.DeletePatient(data).subscribe(
+            (response:any)=>{
+              console.log(response)
+              if(response.status=="success")
+              {
+                alert("Deleted Successfully")
+                this.searchData=[]
+              }
+              
+            }
+          )
+        }
+      }
